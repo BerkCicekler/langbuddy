@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "222548361840",
+    "project_id": "languagebuddy-3a272",
+    "storage_bucket": "languagebuddy-3a272.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222548361840:android:52b171ecdb0d074c362ab5",
+        "android_client_info": {
+          "package_name": "com.berkcicekler.langbuddy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCT9t6DzbY_6uzPThdQPskLH8yfjbULRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222548361840:android:9c89339a2fd00c6f362ab5",
+        "android_client_info": {
+          "package_name": "com.example.langbudtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCT9t6DzbY_6uzPThdQPskLH8yfjbULRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222548361840:android:752f14c50e61a403362ab5",
+        "android_client_info": {
+          "package_name": "com.langbuddy.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCT9t6DzbY_6uzPThdQPskLH8yfjbULRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
