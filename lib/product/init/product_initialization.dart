@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get_it/get_it.dart';
 import 'package:hive/hive.dart';
 import 'package:langbuddy/firebase_options.dart';
@@ -23,8 +22,7 @@ final class ProductInitialization {
 
   /// this method will do core initializations before the app runs
   static Future<void> mainInit() async {
-    final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
-    FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+    WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp(
       options: DefaultFirebaseOptions.currentPlatform,
     );
@@ -36,8 +34,6 @@ final class ProductInitialization {
     _getItInit();
 
     await _rememberMe();
-
-    FlutterNativeSplash.remove();
 
     //Logger().d(await FirebaseMessagingService.getToken());
   }
@@ -72,7 +68,9 @@ final class ProductInitialization {
     } catch (e) {
       Logger().e(e);
     } finally {
-      await refreshTokenCache.closeBox();
+      // no need to wait that function
+      // if we add `wait` its increase the splash screen time
+      refreshTokenCache.closeBox();
     }
   }
 }

@@ -1,6 +1,6 @@
 enum PaddingConstants {
   // page default 8
-  page(8),
+  page(16),
 
   /// 8
   small(8),

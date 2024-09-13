@@ -36,10 +36,12 @@ final class LanguageGuard extends AutoRouteGuard {
       );
     }
     if (authService.user.learningLanguage.isEmpty) {
-      resolver.redirect(LanguagePickerRoute(
-        isSelectingNative: false,
-        canPop: false,
-      ));
+      resolver.redirect(
+        LanguagePickerRoute(
+          isSelectingNative: false,
+          canPop: false,
+        ),
+      );
     }
   }
 }

@@ -7,9 +7,9 @@ part 'register_request_model.g.dart';
 /// register end point data
 final class RegisterRequestModel {
   RegisterRequestModel(
-      {required this.userName, required this.email, required this.password});
+      {required this.username, required this.email, required this.password});
 
-  final String userName;
+  final String username;
   final String email;
   final String password;
 

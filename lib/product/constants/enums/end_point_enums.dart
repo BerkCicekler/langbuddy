@@ -7,7 +7,8 @@ enum EndPointEnums {
   friendsData('/friends/data'),
   friendRequestSend('/friends/sendRequest'),
   friendRequestAccept('/friends/accept'),
-  friendRequestReject('/friends/reject');
+  friendRequestReject('/friends/reject'),
+  searchFriend('/search/');
 
   final String value;
 

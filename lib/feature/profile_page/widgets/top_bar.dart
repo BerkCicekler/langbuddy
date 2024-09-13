@@ -12,15 +12,28 @@ final class _TopBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        IconButton(
-          onPressed: settingsIconButton,
-          icon: const Icon(Icons.settings),
+        Text(
+          'Profile',
+          style: Theme.of(context).textTheme.headlineMedium,
         ),
-        IconButton(
-          onPressed: logoutIconButton,
-          icon: const Icon(Icons.logout),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            IconButton(
+              alignment: AlignmentDirectional.centerEnd,
+              padding: EdgeInsets.zero,
+              onPressed: settingsIconButton,
+              icon: const Icon(Icons.settings),
+            ),
+            IconButton(
+              alignment: AlignmentDirectional.centerEnd,
+              padding: EdgeInsets.zero,
+              onPressed: logoutIconButton,
+              icon: const Icon(Icons.logout),
+            ),
+          ],
         ),
       ],
     );

@@ -42,9 +42,11 @@ final class NotificationBloc
       );
     } catch (e) {
       Logger().e(e);
-      emitter(state.copyWith(
-        state: NotificationStateEnum.error,
-      ));
+      emitter(
+        state.copyWith(
+          state: NotificationStateEnum.error,
+        ),
+      );
     }
   }
 
@@ -62,11 +64,7 @@ final class NotificationBloc
         default:
           throw Exception('Unexpected FriendRequest Action');
       }
-      emitter(
-        state.copyWith(
-          friendRequests: _friendManager.friendRequests,
-        ),
-      );
+      await _refreshHandler(NotificationRefreshEvent(), emitter);
     } on DioException catch (e) {
       Logger().e(e.errorMessage);
     }

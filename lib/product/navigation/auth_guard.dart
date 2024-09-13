@@ -5,7 +5,6 @@ final class AuthGuard extends AutoRouteGuard {
   void onNavigation(NavigationResolver resolver, StackRouter router) {
     final authService = GetIt.I<AuthManager>();
     if (resolver.isReevaluating) {
-      print("ohaaa");
       if (authService.isAuthenticated) {
         resolver.next();
         if (!router.isRouteActive(DashBoardRoute.name)) {

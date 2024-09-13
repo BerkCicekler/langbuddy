@@ -16,6 +16,12 @@ final class CustomLightTheme {
       background: Color(0XFFf5f5f5),
       surface: Color(0XFFfafafa),
     ),
+    textTheme: const TextTheme(
+      headlineMedium: TextStyle(
+        fontWeight: FontWeight.w600,
+        letterSpacing: 1.2,
+      ),
+    ),
     fontFamily: FontConstants.inter,
   );
 }

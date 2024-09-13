@@ -25,8 +25,5 @@ mixin SignUpMixin on State<SignUpPage> {
         ),
       );
     }
-    if (state is SignUpSuccess) {
-      GetIt.I<AppRouter>().replaceAll([const DashBoardRoute()]);
-    }
   }
 }

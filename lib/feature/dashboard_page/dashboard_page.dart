@@ -12,7 +12,7 @@ class DashBoardPage extends StatelessWidget {
     return AutoTabsScaffold(
       routes: const [
         SearchRoute(),
-        DirectMessageRoute(),
+        ContactsRoute(),
         ProfileRoute(),
       ],
       bottomNavigationBuilder: (context, tabsRouter) {
@@ -20,6 +20,8 @@ class DashBoardPage extends StatelessWidget {
           currentIndex: tabsRouter.activeIndex,
           onTap: tabsRouter.setActiveIndex,
           iconSize: 30,
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
           items: const [
             BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.search),
@@ -30,7 +32,7 @@ class DashBoardPage extends StatelessWidget {
               label: 'Contacts',
             ),
             BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.profile_circled),
+              icon: Icon(Icons.person_2_outlined),
               label: 'Profile',
             ),
           ],

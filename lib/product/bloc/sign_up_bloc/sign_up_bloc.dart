@@ -43,7 +43,7 @@ final class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
       await GetIt.I<AuthManager>().login(
         RegisterAuthService(
           registerRequestModel: RegisterRequestModel(
-            userName: userNameController.text,
+            username: userNameController.text,
             email: emailController.text,
             password: passwordController.text,
           ),
@@ -53,6 +53,7 @@ final class SignUpBloc extends Bloc<SignUpEvent, SignUpState> {
       // its a feature of dio
       emit(SignUpSuccess());
     } on DioException catch (e) {
+      Logger().e(e.response?.data);
       emit(SignUpError(e.errorMessage));
       Logger()
         ..e(e.errorMessage)

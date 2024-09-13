@@ -56,8 +56,8 @@ final class _LanguageShowWidget extends StatelessWidget {
         InkWell(
           onTap: onFlagTap,
           child: SizedBox(
-            width: 90,
-            height: 90,
+            width: 80,
+            height: 80,
             child: ClipRRect(
               borderRadius: BorderRadius.circular(1000),
               child: SvgPicture.asset(

@@ -21,7 +21,8 @@ dependencies:
   auto_route: ^9.2.0
 
   #Services
-  dio: ^5.5.0+1
+  dio: ^5.7.0
+  web_socket_channel: ^3.0.1
 
   firebase_core: ^3.1.1
   firebase_messaging: ^15.0.4
@@ -65,6 +66,7 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/app_icon/
     - assets/fonts/inter/
     - assets/svg/countryFlags/
     - assets/photos/
@@ -72,9 +74,12 @@ flutter:
   fonts:
     - family: inter
       fonts:
-        - asset: assets/fonts/inter/Inter-Bold.ttf
         - asset: assets/fonts/inter/Inter-Black.ttf
+        - asset: assets/fonts/inter/Inter-Bold.ttf
         - asset: assets/fonts/inter/Inter-ExtraBold.ttf
-        - asset: assets/fonts/inter/Inter-Medium.ttf
+        - asset: assets/fonts/inter/Inter-ExtraLight.ttf
         - asset: assets/fonts/inter/Inter-Light.ttf
+        - asset: assets/fonts/inter/Inter-Medium.ttf
         - asset: assets/fonts/inter/Inter-Regular.ttf
+        - asset: assets/fonts/inter/Inter-SemiBold.ttf
+        - asset: assets/fonts/inter/Inter-Thin.ttf
