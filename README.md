@@ -1,5 +1,6 @@
 # Language Buddy
-LangBuddy is a mobile application that connects people who want to practice their language skills. Users can select their native language and the language they are learning, and the app finds for them the suitable language partners. Whether someone is learning Spanish, Chinese, French, or any other language, LangBuddy helps them find a conversation partner who complements their learning needs, enabling both to practice and improve in a natural, engaging way.
+LangBuddy is a mobile application that connects people who want to practice their language skills. Users can select their native language and the language they are learning, and the app finds for them the suitable language partners. Whether someone is learning Spanish, Chinese, French, or any other language, LangBuddy helps them find a conversation partner who complements their learning needs, enabling both to practice and improve in a natural, engaging way.<br>
+I also coded the API myself with Golang. Here is the repository [link](https://github.com/BerkCicekler/langbuddyAPI)
 
 # Features
 Auth system<br>
