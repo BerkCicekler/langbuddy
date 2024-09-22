@@ -6,7 +6,7 @@ I also coded the API myself with Golang. Here is the repository [link](https://g
 Auth system<br>
 Remember Me<br>
 Friend management (search, send request, accept, reject)<br>
-Real-Time chat
+Real-Time chat <br>
 Push Notification
 ## Dependencies
 - state management
